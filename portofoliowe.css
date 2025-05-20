@@ -1,0 +1,133 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #00796B;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+
+.foto-profil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Membuat foto jadi bulat */
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd54f;
+}
+
+/* Section umum */
+section {
+    margin: 60px 0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Portofolio */
+#hasilkarya .projek {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.kartu {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 700px;
+    width: 100%;
+}
+
+.kartu:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.kartu img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.kartu h3 {
+    color: #00796B;
+    margin-bottom: 10px;
+}
+
+/* Kontak */
+#kontak a {
+    color: #00796B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#kontak a:hover {
+    text-decoration: underline;
+}
+.wa-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.wa-button:hover {
+    background-color: #1DA851;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004D40;
+    color: white;
+    margin-top: 40px;
+}
